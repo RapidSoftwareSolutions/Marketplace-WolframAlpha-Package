@@ -1,26 +1,68 @@
 {
-  "package": "YahooWeatherAPI",
-  "tagline": "Yahoo! Weather API Wrapper",
+  "package": "Wolfram|Alpha",
+  "tagline": "Wolfram|Alpha Full API",
   "description": "",
   "image": "",
   "repo": "",
   "keywords": [],
   "accounts": {
-    "domain": "google.com",
+    "domain": "wolframalpha.com",
     "credentials": [
       "apiKey"
     ]
   },
   "blocks": [
     {
-      "name": "getWeatherForecast",
-      "description": "This endpoint allows to receive weather information.",
+      "name": "createQuery",
+      "description": "Create a query for Wolfram|Alpha",
       "args": [
         {
           "name": "apiKey",
           "type": "String",
-          "info": "The location for the weather forecast as a WOEID, example is 2487889 (San Diego, CA). Required if location not provided.",
+          "info": "Application key",
           "required": true
+        },
+        {
+          "name": "input",
+          "type": "String",
+          "info": "",
+          "required": true
+        },
+        {
+          "name": "format",
+          "type": "String",
+          "info": "The desired format for individual result pods. image, imagemap, plaintext, minput, moutput, cell, mathml, sound, wav",
+          "required": false
+        },
+        {
+          "name": "includePodId",
+          "type": "String",
+          "info": "Return only one pod by its ID",
+          "required": false
+        },
+        {
+          "name": "excludePodId",
+          "type": "String",
+          "info": "Return all pods except one by its ID",
+          "required": false
+        },
+        {
+          "name": "podTitle",
+          "type": "Array",
+          "info": "Selecting Pods by Title",
+          "required": false
+        },
+        {
+          "name": "podIndex",
+          "type": "Array",
+          "info": "Selecting Pods by Index",
+          "required": false
+        },
+        {
+          "name": "scanner",
+          "type": "String",
+          "info": "Selecting Pods by Scanner. Comma-separated",
+          "required": false
         }
       ],
       "callbacks": [

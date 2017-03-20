@@ -15,7 +15,7 @@ return [
             'path' => __DIR__ . '/../logs/app.log',
             'level' => \Monolog\Logger::DEBUG,
         ],
-        'apiUrl' => '',
+        'apiUrl' => 'http://api.wolframalpha.com/v2/query',
     ],
 ];
 

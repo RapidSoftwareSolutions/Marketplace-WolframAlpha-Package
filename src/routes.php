@@ -1,5 +1,6 @@
 <?php
 $routes = [
+    'createQuery',
     'metadata'
 ];
 foreach($routes as $file) {
