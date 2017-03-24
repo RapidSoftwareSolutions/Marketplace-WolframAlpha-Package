@@ -1,6 +1,6 @@
 {
-  "package": "Wolfram|Alpha",
-  "tagline": "Wolfram|Alpha Full API",
+  "package": "WolframAlpha",
+  "tagline": "WolframAlpha Full API",
   "description": "Get search results from this computational knowledge engine",
   "image": "https://logo.clearbit.com/wolframalpha.com",
   "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-WolframAlpha-Package",
