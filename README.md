@@ -12,7 +12,7 @@ Create a query for Wolfram|Alpha
 
 | Field       | Type  | Description
 |-------------|-------|----------
-| apiKey      | String| Application key
+| apiKey      | credentials| Application key
 | input       | String| Search expression
 | format      | String| The desired format for individual result pods. image, imagemap, plaintext, minput, moutput, cell, mathml, sound, wav
 | includePodId| String| Return only one pod by its ID
