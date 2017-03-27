@@ -5,7 +5,7 @@ Get search results from this computational knowledge engine
 * Credentials: apiKey
 
 ## How to get credentials: 
-1. Get apiKey from https://developer.wolframalpha.com/portal/myapps/ 
+1. Get apiKey from [Wolfram|Alpha](https://developer.wolframalpha.com/portal/myapps/)
  
 ## Wolfram|Alpha.createQuery
 Create a query for Wolfram|Alpha
