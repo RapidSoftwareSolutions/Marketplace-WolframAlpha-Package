@@ -57,19 +57,29 @@
         },
         {
           "name": "podTitle",
-          "type": "Array",
+          "type": "List",
           "info": "Selecting Pods by Title",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "pod",
+            "type": "String",
+            "info": "Pod title"
+          }
         },
         {
           "name": "podIndex",
-          "type": "Array",
+          "type": "List",
           "info": "Selecting Pods by Index",
-          "required": false
+          "required": false,
+          "structure": {
+            "name": "pod",
+            "type": "String",
+            "info": "Pod index"
+          }
         },
         {
           "name": "scanner",
-          "type": "Array",
+          "type": "List",
           "info": "Selecting Pods by Scanner",
           "required": false,
           "structure": {
