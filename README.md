@@ -19,5 +19,5 @@ Create a query for Wolfram|Alpha
 | excludePodId| String| Return all pods except one by its ID
 | podTitle    | Array | Selecting Pods by Title
 | podIndex    | Array | Selecting Pods by Index
-| scanner     | String| Selecting Pods by Scanner. Comma-separated
+| scanner     | Array | Selecting Pods by Scanner
 
