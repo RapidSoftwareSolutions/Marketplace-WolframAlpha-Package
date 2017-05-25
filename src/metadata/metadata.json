@@ -38,7 +38,8 @@
         },
         {
           "name": "format",
-          "type": "String",
+          "type": "Select",
+          "option": ["image", "imagemap", "plaintext", "minput", "moutput", "cell", "mathml", "sound", "wav"],
           "info": "The desired format for individual result pods. image, imagemap, plaintext, minput, moutput, cell, mathml, sound, wav",
           "required": false
         },
@@ -68,9 +69,14 @@
         },
         {
           "name": "scanner",
-          "type": "String",
-          "info": "Selecting Pods by Scanner. Comma-separated",
-          "required": false
+          "type": "Array",
+          "info": "Selecting Pods by Scanner",
+          "required": false,
+          "structure": {
+            "name": "scanner",
+            "type": "String",
+            "info": "Pod"
+          }
         }
       ],
       "callbacks": [

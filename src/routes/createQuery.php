@@ -33,8 +33,13 @@ $app->post('/api/WolframAlpha/createQuery', function ($request, $response) {
     if (isset($postData['args']['podIndex']) && strlen($postData['args']['podIndex']) > 0) {
         $params['podindex'] = $postData['args']['podIndex'];
     }
-    if (isset($postData['args']['scanner']) && strlen($postData['args']['scanner']) > 0) {
-        $params['scanner'] = $postData['args']['scanner'];
+    if (!empty($postData['args']['scanner'])) {
+        if (is_array($postData['args']['scanner'])) {
+            $params['scanner'] = implode(',', $postData['args']['scanner']);
+        }
+        else {
+            $params['scanner'] = $postData['args']['scanner'];
+        }
     }
 
     try {
