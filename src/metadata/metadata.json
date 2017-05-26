@@ -39,7 +39,7 @@
         {
           "name": "format",
           "type": "Select",
-          "option": ["image", "imagemap", "plaintext", "minput", "moutput", "cell", "mathml", "sound", "wav"],
+          "options": ["image", "imagemap", "plaintext", "minput", "moutput", "cell", "mathml", "sound", "wav"],
           "info": "The desired format for individual result pods. image, imagemap, plaintext, minput, moutput, cell, mathml, sound, wav",
           "required": false
         },
